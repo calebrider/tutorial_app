@@ -74,6 +74,21 @@ class _ButtonPageState extends State<ButtonPage> {
                 side: BorderSide(width: 2.0, color: pinkColor)
               ),
             ),
+            Padding(padding: EdgeInsets.all(10.0)),
+            Container(
+              decoration: ShapeDecoration(
+                shape: const StadiumBorder(),
+                gradient: LinearGradient(
+                  colors: [blueColor, pinkColor],
+                ),
+              ),
+              child: MaterialButton(
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                shape: const StadiumBorder(),
+                child: Text('Gradient Button', style: TextStyle(color: Colors.white),),
+                onPressed: () {}
+                ),
+              ),
           ],
         ),
       ),

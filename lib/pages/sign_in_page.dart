@@ -118,19 +118,23 @@ bool isSelected = false;
                     style: TextStyle(color: pinkColor),
                   ),
                   ),
-                  Padding(padding: EdgeInsets.all(10.0)),
+                  Padding(padding: EdgeInsets.all(20.0)),
                   FractionallySizedBox(widthFactor: 0.75,
-                    child: OutlinedButton(
-                      onPressed: () {
-                        setState(() {
-                          isSelected = true;
-                        });
-                      },
-                      child: Text('Sign In', style: TextStyle(fontSize: 18),),
-                      style: OutlinedButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: blueColor,
-                          shape: StadiumBorder(),
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: const StadiumBorder(),
+                        gradient: LinearGradient(
+                          colors: [blueColor, pinkColor],
+                        ),
+                      ),
+                      child: MaterialButton(
+                          shape: const StadiumBorder(),
+                          child: Text('Sign In', style: TextStyle(color: Colors.white),),
+                          onPressed: () {
+                            setState(() {
+                              isSelected = true;
+                            });
+                          }
                       ),
                     ),
                   ),
