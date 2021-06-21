@@ -23,6 +23,7 @@ bool isSelected = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         elevation: 0.0,
         brightness: Brightness.dark,

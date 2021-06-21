@@ -28,68 +28,72 @@ class _ButtonPageState extends State<ButtonPage> {
         backgroundColor: blueColor,
       ),
       body: Container(padding: EdgeInsets.all(10.0),
-        child: Column(
-          children: [
-            TextButton(
-                onPressed: () {}, child: Text('TextButton')
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            TextButton(
-              onPressed: () {}, child: Text(
-              'Colored TextButton',
-              style: TextStyle(
-                color: pinkColor,
-              ),
-            ),
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            ElevatedButton(
-                onPressed: () {}, child: Text('ElevatedButton')
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            ElevatedButton(onPressed: () {}, child: Text(
-              'Colored ElevatedButton',
-              style: TextStyle(color: Colors.white),
-            ),
-              style: ElevatedButton.styleFrom(
-                primary: pinkColor,
-              ),
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            OutlinedButton(onPressed: () {}, child: Text('OutlinedButton')),
-            Padding(padding: EdgeInsets.all(10.0)),
-            OutlinedButton(
-                onPressed: () {}, child: Text('Colored OutlinedButton'),
-              style: OutlinedButton.styleFrom(
-                primary: pinkColor
-              ),
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            OutlinedButton(
-              onPressed: () {}, child: Text('Button Shape'),
-              style: OutlinedButton.styleFrom(
-                primary: Colors.white,
-                backgroundColor: blueColor,
-                shape: StadiumBorder(),
-                side: BorderSide(width: 2.0, color: pinkColor)
-              ),
-            ),
-            Padding(padding: EdgeInsets.all(10.0)),
-            Container(
-              decoration: ShapeDecoration(
-                shape: const StadiumBorder(),
-                gradient: LinearGradient(
-                  colors: [blueColor, pinkColor],
+        child: Center(
+          child: FractionallySizedBox(widthFactor: 0.85,
+            child: Column(
+              children: [
+                TextButton(
+                    onPressed: () {}, child: Text('TextButton')
                 ),
-              ),
-              child: MaterialButton(
-                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                shape: const StadiumBorder(),
-                child: Text('Gradient Button', style: TextStyle(color: Colors.white),),
-                onPressed: () {}
+                Padding(padding: EdgeInsets.all(10.0)),
+                TextButton(
+                  onPressed: () {}, child: Text(
+                  'Colored TextButton',
+                  style: TextStyle(
+                    color: pinkColor,
+                  ),
                 ),
-              ),
-          ],
+                ),
+                Padding(padding: EdgeInsets.all(10.0)),
+                ElevatedButton(
+                    onPressed: () {}, child: Text('ElevatedButton')
+                ),
+                Padding(padding: EdgeInsets.all(10.0)),
+                ElevatedButton(onPressed: () {}, child: Text(
+                  'Colored ElevatedButton',
+                  style: TextStyle(color: Colors.white),
+                ),
+                  style: ElevatedButton.styleFrom(
+                    primary: pinkColor,
+                  ),
+                ),
+                Padding(padding: EdgeInsets.all(10.0)),
+                OutlinedButton(onPressed: () {}, child: Text('OutlinedButton')),
+                Padding(padding: EdgeInsets.all(10.0)),
+                OutlinedButton(
+                    onPressed: () {}, child: Text('Colored OutlinedButton'),
+                  style: OutlinedButton.styleFrom(
+                    primary: pinkColor
+                  ),
+                ),
+                Padding(padding: EdgeInsets.all(10.0)),
+                OutlinedButton(
+                  onPressed: () {}, child: Text('Button Shape'),
+                  style: OutlinedButton.styleFrom(
+                    primary: Colors.white,
+                    backgroundColor: blueColor,
+                    shape: StadiumBorder(),
+                    side: BorderSide(width: 2.0, color: pinkColor)
+                  ),
+                ),
+                Padding(padding: EdgeInsets.all(10.0)),
+                Container(
+                  decoration: ShapeDecoration(
+                    shape: const StadiumBorder(),
+                    gradient: LinearGradient(
+                      colors: [blueColor, pinkColor],
+                    ),
+                  ),
+                  child: MaterialButton(
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    shape: const StadiumBorder(),
+                    child: Text('Gradient Button', style: TextStyle(color: Colors.white),),
+                    onPressed: () {}
+                    ),
+                  ),
+              ],
+            ),
+          ),
         ),
       ),
     );

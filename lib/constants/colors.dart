@@ -17,3 +17,4 @@ const MaterialColor blueMaterialColor = MaterialColor(
 );
 var blueColor = const Color(0xFF43A6E6);
 var pinkColor = const Color(0xFFF756CF);
+var backgroundColor = const Color(0xFFFFFFFF);

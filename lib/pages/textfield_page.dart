@@ -29,63 +29,67 @@ class _TextFieldPageState extends State<TextFieldPage> {
       ),
       body: Container(padding: EdgeInsets.all(10.0),
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  hintText: 'Basic TextField'
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Rectangular TextField'
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0)),
-                  hintText: 'Rounded TextField'
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: pinkColor, width: 2.0)
+          child: Center(
+            child: FractionallySizedBox(widthFactor: 0.85,
+              child: Column(
+                children: [
+                  TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Basic TextField'
+                    ),
                   ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: blueColor, width: 2.0)
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Rectangular TextField'
+                    ),
                   ),
-                  hintText: 'Outline Border Colors'
-                ),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0)),
+                      hintText: 'Rounded TextField'
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: pinkColor, width: 2.0)
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: blueColor, width: 2.0)
+                      ),
+                      hintText: 'Outline Border Colors'
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(),
+                      labelText: 'labelText',
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      prefixIcon: Icon(Icons.person),
+                      labelText: 'prefixIcon',
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(10.0)),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'obscureText',
+                    ),
+                    obscureText: true,
+                  ),
+                ],
               ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                  labelText: 'labelText',
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.person),
-                  labelText: 'prefixIcon',
-                ),
-              ),
-              Padding(padding: EdgeInsets.all(10.0)),
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'obscureText',
-                ),
-                obscureText: true,
-              ),
-            ],
+            ),
           ),
         ),
       ),
